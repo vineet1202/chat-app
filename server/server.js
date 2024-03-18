@@ -9,6 +9,9 @@ const io = require("socket.io")(httpServer, {
     origin: "*",
   },
 });
+app.get("/", (req, res) => {
+  res.json("Server is running");
+});
 
 const Time = new Date().toLocaleTimeString();
 const botName = "ChatCord";
