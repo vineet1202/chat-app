@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect, useRef } from "react";
 import { io } from "socket.io-client";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect("https://chat-app-3-7tgb.onrender.com/");
 
 function App() {
   const [formData, setFormData] = useState("");
