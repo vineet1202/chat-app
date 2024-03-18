@@ -1,0 +1,58 @@
+@tailwind base;
+.form-container {
+  @apply border border-slate-300 rounded mt-40 w-1/5 m-auto px-4 py-6;
+}
+
+.input {
+  @apply border p-2 m-2 text-lg rounded border-slate-500;
+}
+
+.btn {
+  @apply w-3/5 m-auto mt-4 py-2 rounded text-lg;
+}
+
+.dashboard {
+  @apply border p-8 bg-sky-500 text-white flex justify-between;
+}
+
+.chatBox {
+  @apply w-3/5 m-auto h-screen border-2 shadow-md rounded-md relative;
+}
+
+.dropdown {
+  @apply relative inline-block bg-blue-700 text-white rounded shadow p-2 w-32 text-center;
+}
+
+.dropdown-content {
+  @apply absolute z-10 w-32 shadow bg-indigo-500 text-white top-10 rounded p-2 left-0 mt-1.5;
+}
+
+.msg-self {
+  @apply text-black bg-[#B2F2BB] w-fit m-2 py-1 px-3 rounded-xl text-lg;
+}
+
+.msg-user {
+  @apply text-black bg-[#E9ECEF] w-fit m-2 py-1 px-3 rounded-xl text-lg;
+}
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ababab;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
