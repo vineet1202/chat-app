@@ -91,13 +91,8 @@ function App() {
         <div className="chatBox">
           <div className="dashboard">
             <p className="text-2xl font-italic font-semibold">Room: {rooms}</p>
-            <div className="dropdown">
-              <button
-                onClick={() => setShowUsers(!showUsers)}
-                className="text-lg font-bold"
-              >
-                Users
-              </button>
+            <div className="dropdown" onClick={() => setShowUsers(!showUsers)}>
+              <button className="text-lg font-bold">Users</button>
               <div
                 className={` ${
                   showUsers ? "block" : "hidden"
@@ -111,7 +106,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="h-3/4  px-2 right-0 border overflow-y-scroll">
+          <div className="h-full px-2 border overflow-y-scroll">
             {chat.map((payload, index) => (
               <div key={index} ref={listRef}>
                 {payload.username === username ? (
@@ -143,7 +138,7 @@ function App() {
 
           <form
             onSubmit={sendChat}
-            className="text-center absolute bottom-0 border flex w-full justify-between"
+            className="text-center border flex w-full justify-between"
           >
             <input
               type="text"
@@ -153,7 +148,7 @@ function App() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-              className="border rounded-md text-xl p-6 w-full outline-none"
+              className="border rounded-md text-xl p-4 w-full outline-none"
             />
             <button
               type="submit"

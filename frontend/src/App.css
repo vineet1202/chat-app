@@ -1,6 +1,6 @@
 @tailwind base;
 .form-container {
-  @apply border border-slate-300 rounded mt-40 w-1/5 m-auto px-4 py-6;
+  @apply border border-slate-300 rounded mt-40 w-5/6 sm:max-w-80 m-auto px-4 py-6;
 }
 
 .input {
@@ -12,19 +12,19 @@
 }
 
 .dashboard {
-  @apply border p-8 bg-sky-500 text-white flex justify-between;
+  @apply border p-4 sm:p-8 bg-sky-500 text-white flex justify-between;
 }
 
 .chatBox {
-  @apply w-3/5 m-auto h-screen border-2 shadow-md rounded-md relative;
+  @apply w-full sm:w-3/5 m-auto h-screen border-2 shadow-md rounded-md relative flex flex-col;
 }
 
 .dropdown {
-  @apply relative inline-block bg-blue-700 text-white rounded shadow p-2 w-32 text-center;
+  @apply relative inline-block bg-blue-700 text-white rounded shadow p-2 w-24 sm:w-32 text-center;
 }
 
 .dropdown-content {
-  @apply absolute z-10 w-32 shadow bg-indigo-500 text-white top-10 rounded p-2 left-0 mt-1.5;
+  @apply absolute z-10 w-24 sm:w-32 shadow bg-indigo-500 text-white top-10 rounded p-2 left-0 mt-1.5;
 }
 
 .msg-self {
